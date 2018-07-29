@@ -2,10 +2,6 @@
 
 Like [`sudocabulary`](https://github.com/badarsh2/Sudocabulary) but for GRE words from [Magoosh's](https://gre.magoosh.com/) vocab list, since sudocabulary's vocab list is pretty basic.
 
-## System Requirements
-
-- python 3+ runtime
-
 ## Screenshot
 
 <img width="1419" alt="screenshot 2018-07-29 09 23 17" src="https://user-images.githubusercontent.com/3429763/43366788-2376a85c-9311-11e8-9f5d-19dc16ea9704.png">
@@ -36,6 +32,8 @@ Manually:
 ## Contributing
 
 To regenerate `bin/vocab` after changing the vocab txt file:
+
+1. Ensure you have a Python 3 runtime installed
 
 1. Install requirements
     ```sh
