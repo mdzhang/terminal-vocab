@@ -2,30 +2,21 @@
 
 Like [`sudocabulary`](https://github.com/badarsh2/Sudocabulary) but for GRE words from [Magoosh's](https://gre.magoosh.com/) vocab list, since sudocabulary's vocab list is pretty basic.
 
-
 ## System Requirements
 
 - python 3+ runtime
 
+## Installation
 
-## Usage
+With [basher](https://github.com/basherpm/basher):
 
-1. Install requirements
-    ```sh
-    pip install -r requirements.txt
-    ```
+  ```sh
+  basher install mdzhang/magoosh-vocab
+  ```
 
-1. Generate the script
-    ```sh
-    python convert.py > vocab
-    ```
+Manually:
 
-1. Ensure the script is executable
-    ```sh
-    chmod u+x vocab
-    ```
-
-1. Move the executable onto your path
+1. Download the `bin/vocab/` executable and move it onto your path e.g.
     ```sh
     export PATH="~/.local/bin:$PATH"
     mv vocab ~/.local/bin
@@ -36,6 +27,25 @@ Like [`sudocabulary`](https://github.com/badarsh2/Sudocabulary) but for GRE word
     if [ -f ~/.local/bin/vocab ]; then
       ~/.local/bin/vocab
     fi
+    ```
+
+## Contributing
+
+To regenerate `bin/vocab` after changing the vocab txt file:
+
+1. Install requirements
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+1. Generate the script
+    ```sh
+    python convert.py > ./bin/vocab
+    ```
+
+1. Ensure the script is executable
+    ```sh
+    chmod u+x ./bin/vocab
     ```
 
 ## License
