@@ -22,6 +22,7 @@ def parse_txt_inner(it, long_defn: str):
     :return: line for _next_ words definition, and a tuple
         (word, definition, part of speech, example usage)
     """
+    # first line starts to define a word
     match = re.match(DEFN_LINE_PATT, long_defn)
 
     if not match:
@@ -30,15 +31,34 @@ def parse_txt_inner(it, long_defn: str):
         raise ValueError(msg)
 
     word, pos, defn = match.groups()
-
-    end_of_example = False
-    long_defn = None
     full_example = ''
+    long_defn = None
+
+    # ensuing lines may result from a long definition if they don't
+    # start with a capital letter
+    # mdzhang: this is not a great estimator
+    end_of_cont_defn = False
+    while not end_of_cont_defn:
+        try:
+            cont_defn = next(it)
+        except StopIteration:
+            end_of_cont_defn = True
+            continue
+
+        if cont_defn[0].isupper():
+            full_example = cont_defn
+            end_of_cont_defn = True
+        else:
+            defn += ' ' + cont_defn.rstrip('\n')
+
+    # examples may also consist of multiple lines
+    # we know they end when the next line to look at looks like the
+    # start of the definition for a new word
+    end_of_example = False
     while not end_of_example:
         try:
             example = next(it)
         except StopIteration:
-            long_defn = None
             end_of_example = True
             continue
 
