@@ -16,7 +16,7 @@ With [basher](https://github.com/basherpm/basher):
 
 Manually:
 
-1. Download the `bin/vocab/` executable and move it onto your path e.g.
+1. Download the `bin/vocab` executable and move it onto your path e.g.
     ```sh
     export PATH="~/.local/bin:$PATH"
     mv vocab ~/.local/bin
