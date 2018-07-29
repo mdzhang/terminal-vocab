@@ -6,6 +6,10 @@ Like [`sudocabulary`](https://github.com/badarsh2/Sudocabulary) but for GRE word
 
 - python 3+ runtime
 
+## Screenshot
+
+<img width="1419" alt="screenshot 2018-07-29 09 23 17" src="https://user-images.githubusercontent.com/3429763/43366788-2376a85c-9311-11e8-9f5d-19dc16ea9704.png">
+
 ## Installation
 
 With [basher](https://github.com/basherpm/basher):
