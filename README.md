@@ -24,8 +24,8 @@ Manually:
 
 1. Ensure shell runs script on startup by adding the following to e.g. your `~/.bashrc`
     ```sh
-    if [ -f ~/.local/bin/vocab ]; then
-      ~/.local/bin/vocab
+    if which vocab > /dev/null; then
+      vocab
     fi
     ```
 
