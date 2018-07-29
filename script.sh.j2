@@ -19,10 +19,10 @@ NC='\033[0m'
 
 bold=$(tput bold)
 normal=$(tput sgr0)
-printf "${bold}Word Of The Session: ${RED}${wordarray[rand-1],,}${NC}\n"
-printf "${bold}Meaning            : ${PURPLE}${meaningarray[rand-1],,}${NC}\n"
-printf "${bold}Part of speech     : ${GREEN}${posarray[rand-1],,}${NC}\n"
-printf "${bold}Example            : ${CYAN}${examplearray[rand-1],,}${NC}\n"
+printf "${bold}Word          : ${RED}${wordarray[rand-1],,}${NC}\n"
+printf "${bold}Meaning       : ${PURPLE}${meaningarray[rand-1],,}${NC}\n"
+printf "${bold}Part of speech: ${GREEN}${posarray[rand-1],,}${NC}\n"
+printf "${bold}Example       : ${CYAN}${examplearray[rand-1],,}${NC}\n"
 
 printf "\n"
 

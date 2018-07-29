@@ -48,7 +48,7 @@ def parse_txt_inner(it, long_defn: str):
         else:
             full_example += ' ' + example.rstrip('\n')
 
-    return long_defn, (word, pos, defn, full_example)
+    return long_defn, (word, pos, defn, full_example.strip())
 
 
 def parse_txt(filename: str) -> T.Tuple:
@@ -90,8 +90,9 @@ def generate_script(**kwargs):
 
 if __name__ == '__main__':
     words, parts_of_speech, defns, examples = parse_txt(INPUT_FILE_NAME)
+    exs = tuple(map(lambda x: x.replace("'", ''), examples))
     script_str = generate_script(words=tuple(words),
                                  parts_of_speech=tuple(parts_of_speech),
                                  definitions=tuple(defns),
-                                 examples=tuple(examples))
+                                 examples=exs)
     print(script_str)
