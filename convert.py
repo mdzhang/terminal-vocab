@@ -7,7 +7,7 @@ from jinja2 import Template
 
 logger = logging.getLogger()
 
-INPUT_FILE_NAME = 'magoosh-gre-1000-words_oct01.txt'
+INPUT_FILE_NAME = 'vocab.txt'
 DEFN_LINE_PATT = re.compile(r'^(\w+) \((\w+)\): (.+)\n$')
 
 

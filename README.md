@@ -1,6 +1,6 @@
 # Magoosh Vocab
 
-Like [`sudocabulary`](https://github.com/badarsh2/Sudocabulary) but for GRE words from [Magoosh's](https://gre.magoosh.com/) vocab list, since sudocabulary's vocab list is pretty basic.
+Like [`sudocabulary`](https://github.com/badarsh2/Sudocabulary) but for "Advanced" GRE words from [Magoosh's](https://gre.magoosh.com/) vocab list, since sudocabulary's vocab list is pretty basic.
 
 ## Screenshot
 
