@@ -4,7 +4,7 @@ Like [`sudocabulary`](https://github.com/badarsh2/Sudocabulary) but for "Advance
 
 ## Screenshot
 
-<img width="1419" alt="screenshot 2018-07-29 09 23 17" src="https://user-images.githubusercontent.com/3429763/43366788-2376a85c-9311-11e8-9f5d-19dc16ea9704.png">
+<img width="1422" alt="screenshot 2018-07-31 09 46 12" src="https://user-images.githubusercontent.com/3429763/43463460-9a315672-94a6-11e8-92b4-10f7c15d083b.png">
 
 ## Installation
 
