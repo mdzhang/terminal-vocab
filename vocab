@@ -50,8 +50,14 @@ normal=$(tput sgr0)
 
 printf "${bold}Word          : ${RED}${word}${NC}\n"
 printf "${bold}Meaning       : ${PURPLE}${meaning}${NC}\n"
-printf "${bold}Part of speech: ${GREEN}${pos}${NC}\n"
-printf "${bold}Example       : ${CYAN}${example}${NC}\n"
+
+if [ "${pos}x" != "nullx" ]; then
+  printf "${bold}Part of speech: ${GREEN}${pos}${NC}\n"
+fi
+
+if [ "${example}x" != "nullx" ]; then
+  printf "${bold}Example       : ${CYAN}${example}${NC}\n"
+fi
 
 printf "\n"
 
