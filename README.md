@@ -33,13 +33,13 @@ Manually:
 ### Custom Vocab Lists
 
 1. Make a JSON file where each entry in a top level array has the keys:
-  - `word`: the vocab word
-  - `meaning`: the definition of the word
-  - `pos`: aka part of speech
-  - `example`: a sentence using the word in an example
+    - `word`: the vocab word
+    - `meaning`: the definition of the word
+    - `pos`: aka part of speech
+    - `example`: a sentence using the word in an example
 1. Add the file under `$VOCAB_HOME/data/<file name>.json`
-  - by default, `VOCAB_HOME` is the `data` directory alongside the `vocab` executable; if you used [basher][basher] to install this, then it would be e.g. `~/.basher/cellar/packages/mdzhang/terminal-vocab/data`
-  - you can override this to point to some other directory on your host
+   - by default, `VOCAB_HOME` is the `data` directory alongside the `vocab` executable; if you used [basher][basher] to install this, then it would be e.g. `~/.basher/cellar/packages/mdzhang/terminal-vocab/data`
+    - you can override this to point to some other directory on your host
 1. Change your environment variable `VOCAB_SET` to match `<file name>`
 1. Profit
 
