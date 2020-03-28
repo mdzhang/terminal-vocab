@@ -12,7 +12,7 @@ Uses "Advanced" GRE words from [Magoosh's](https://gre.magoosh.com/) vocab list,
 With [basher][basher]
 
   ```sh
-  basher install mdzhang/magoosh-vocab
+  basher install mdzhang/terminal-vocab
   ```
 
 Manually:
@@ -38,7 +38,7 @@ Manually:
   - `pos`: aka part of speech
   - `example`: a sentence using the word in an example
 1. Add the file under `$VOCAB_HOME/data/<file name>.json`
-  - by default, `VOCAB_HOME` is the `data` directory alongside the `vocab` executable; if you used [basher][basher] to install this, then it would be e.g. `~/.basher/cellar/packages/mdzhang/magoosh-vocab/data`
+  - by default, `VOCAB_HOME` is the `data` directory alongside the `vocab` executable; if you used [basher][basher] to install this, then it would be e.g. `~/.basher/cellar/packages/mdzhang/terminal-vocab/data`
   - you can override this to point to some other directory on your host
 1. Change your environment variable `VOCAB_SET` to match `<file name>`
 1. Profit

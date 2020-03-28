@@ -12,7 +12,7 @@ GREEN='\033[0;32m'
 PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 NC='\033[0m' # No Color
-package='mdzhang/magoosh-vocab'
+package='mdzhang/terminal-vocab'
 DEBUG=0
 
 start_time=$(date +%s%3N)
