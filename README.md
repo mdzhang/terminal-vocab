@@ -7,6 +7,10 @@ Uses "Advanced" GRE words from [Magoosh's](https://gre.magoosh.com/) vocab list,
 
 <img width="1422" alt="screenshot 2018-07-31 09 46 12" src="https://user-images.githubusercontent.com/3429763/43463460-9a315672-94a6-11e8-92b4-10f7c15d083b.png">
 
+## Requirements
+
+* [jq](https://github.com/stedolan/jq)
+
 ## Installation
 
 With [basher][basher]
