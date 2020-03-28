@@ -31,7 +31,7 @@ fi
 data_file=$VOCAB_HOME/$VOCAB_SET.json
 
 if test ! -f "$data_file"; then
-  echo "${RED}Vocab data set does not exist! : $data_file${NC}"
+  printf "${RED}Vocab data set does not exist! : $data_file${NC}\n"
   exit 1
 fi
 
