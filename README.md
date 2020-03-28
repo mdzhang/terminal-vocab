@@ -1,6 +1,7 @@
-# Magoosh Vocab
+# Command Line Vocab
 
-Like [`sudocabulary`](https://github.com/badarsh2/Sudocabulary) but for "Advanced" GRE words from [Magoosh's](https://gre.magoosh.com/) vocab list, since sudocabulary's vocab list is pretty basic.
+Like [`sudocabulary`](https://github.com/badarsh2/Sudocabulary) but allows for loading custom vocab lists based on environment variables.
+Uses "Advanced" GRE words from [Magoosh's](https://gre.magoosh.com/) vocab list, as an example.
 
 ## Screenshot
 
@@ -8,7 +9,7 @@ Like [`sudocabulary`](https://github.com/badarsh2/Sudocabulary) but for "Advance
 
 ## Installation
 
-With [basher](https://github.com/basherpm/basher):
+With [basher][basher]
 
   ```sh
   basher install mdzhang/magoosh-vocab
@@ -29,27 +30,21 @@ Manually:
     fi
     ```
 
-## Contributing
+### Custom Vocab Lists
 
-To regenerate `bin/vocab` after changing the vocab txt file:
-
-1. Ensure you have a Python 3 runtime installed
-
-1. Install requirements
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-1. Generate the script
-    ```sh
-    python convert.py > ./bin/vocab
-    ```
-
-1. Ensure the script is executable
-    ```sh
-    chmod u+x ./bin/vocab
-    ```
+1. Make a JSON file where each entry in a top level array has the keys:
+  - `word`: the vocab word
+  - `meaning`: the definition of the word
+  - `pos`: aka part of speech
+  - `example`: a sentence using the word in an example
+1. Add the file under `$VOCAB_HOME/data/<file name>.json`
+  - by default, `VOCAB_HOME` is the `data` directory alongside the `vocab` executable; if you used [basher][basher] to install this, then it would be e.g. `~/.basher/cellar/packages/mdzhang/magoosh-vocab/data`
+  - you can override this to point to some other directory on your host
+1. Change your environment variable `VOCAB_SET` to match `<file name>`
+1. Profit
 
 ## License
 
 MIT
+
+[basher]: https://github.com/basherpm/basher
